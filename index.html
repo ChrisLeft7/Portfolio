@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.Leftridge | FullStack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/39995d14a5.css" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+
+
+    <section class="banner" id="home">
+        <div class="imgSidebar">
+            <img src="./chris-1.png">
+        </div>
+        <div class="contentBx">
+            
+            <div>
+                <h4>Christian Leftridge</h4>
+                <h2>Software Engineer | UI / UX Designer</h2>
+                <p>Full-Stack developer with expertise in HTML, CSS, Javascript, Python, React, and other languages.<br>
+                    Looking forward to providing you with clean code and cross-platform functionality.
+                </p>
+                <a href="#contact" class="btn">Let's Work</a>
+            </div>
+        </div>
+    </section>
+    
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <section class="about" id="resume">
+        <div class="title">
+            <h2>Resume</h2>
+            <p>"With time and experience, a man can accomplish all things"<br>- Christian Leftridge 2019</p>
+        </div>
+        <div class="resume">
+            <div class="imgBx">
+                <img src="./Screen Shot 2023-01-30 at 11.43.53 PM.png">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="past">Past Work</h2>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <a href="/">Play</a>
+                        <p>A random joke generator delivering the most least expected laughs. Jokeworld was built with a React frontend and Django backend.</p>
+                    </div>
+                </div>
+                <div class="face face2 face3">
+                    <h2>Jokeworld</h2>
+                </div>
+            </div>
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <a href="https://swole-workout.herokuapp.com/">Play</a>>
+                        <p>The workout app with an encyclopedia of exercises for all body types; suitable for the gym buffs and the at-home warriors.</p>
+                    </div>
+                </div>
+                <div class="face face2 face4">
+                    <h2>Swole</h2>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2>Contact Me</h2>
+            
+        </div>
+        <div class="contactform">
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="First Name">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col50">
+                    <input type="text" name="" placeholder="Email">
+                </div>
+                <div class="col50">
+                    <input type="text" name="" placeholder="Phone No.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <textarea placeholder="How can I help?"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col100">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active')
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/39995d14a5.js" crossorigin="anonymous"></script>
+</body>
+</html>
